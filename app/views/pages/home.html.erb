@@ -1,3 +1,8 @@
+<%if user_signed_in? %>
+<h1>Welcome to the Bondable Members Area</h1>
+<p>
+<h2>You are logged in.</h2>
+<% else %>
 <div class="center hero-unit">
 <h1>Welcome to Bondable</h1>
 <p>
@@ -7,7 +12,7 @@ Connect your cloud apps together! Use
 </p>
 <p>
 <p>
-<%= link_to "Sign up now!", "#" , class: "btn btn-large btn-primary" %> </p>
+<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-large btn-primary" %> </p>
 </div>
 </p>
-
+<%end %>
