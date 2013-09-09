@@ -1,8 +1,4 @@
-<%if user_signed_in? %>
-<h1>Welcome to the Bondable Members Area</h1>
-<p>
-<h2>You are logged in.</h2>
-<% else %>
+<% unless user_signed_in? %>
 <div class="center hero-unit">
 <h1>Welcome to Bondable</h1>
 <p>
